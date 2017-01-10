@@ -9,8 +9,8 @@ namespace StockAlert.Controllers
     [Route("api/[controller]")]
     public class AuthorsController : Controller
     {
-        private readonly ArticleContext _context;
-        public AuthorsController(ArticleContext context)
+        private readonly AlertContext _context;
+        public AuthorsController(AlertContext context)
         {
             _context = context;
         }
@@ -36,5 +36,13 @@ namespace StockAlert.Controllers
             _context.SaveChanges();
             return StatusCode(201, value);
         }
+
+        // [HttpPut("{Id}")]
+        // public IActionResult Put([FromBody]Author value, int id)
+        // {
+        //     Author tmp = _context.Authors.FirstOrDefault(x => x.Id == id).Add(value);
+        //     _context.SaveChanges();
+        //     return StatusCode(201, value);
+        // }
     }
 }

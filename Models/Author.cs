@@ -7,7 +7,7 @@ namespace StockAlert.Models
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-
-        public List<Article> Articles { get; set; } = new List<Article>();
+        public string Email { get; set; }
+        public List<Alert> Alerts { get; set; } = new List<Alert>();
     }
 }

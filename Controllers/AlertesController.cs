@@ -7,32 +7,32 @@ using Microsoft.AspNetCore.Mvc;
 namespace StockAlert.Controllers
 {
     [Route("api/[controller]")]
-    public class ArticlesController : Controller
+    public class AlertsController : Controller
     {
-        private readonly ArticleContext _context;
-        public ArticlesController(ArticleContext context)
+        private readonly AlertContext _context;
+        public AlertsController(AlertContext context)
         {
             _context = context;
         }
 
         // GET: /<controller>/
-        public IEnumerable<Article> Get()
+        public IEnumerable<Alert> Get()
         {
-            return _context.Articles.ToList();
+            return _context.Alerts.ToList();
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public Article Get(int id)
+        public Alert Get(int id)
         {
-            return _context.Articles.FirstOrDefault(x=>x.Id == id);
+            return _context.Alerts.FirstOrDefault(x=>x.Id == id);
         }
 
         // POST api/values
         [HttpPost]
-        public IActionResult Post([FromBody]Article value)
+        public IActionResult Post([FromBody]Alert value)
         {
-            _context.Articles.Add(value);
+            _context.Alerts.Add(value);
             _context.SaveChanges();
             return StatusCode(201, value);
         }

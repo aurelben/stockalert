@@ -1,4 +1,3 @@
-using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 
 namespace StockAlert.Models 
@@ -11,7 +10,7 @@ namespace StockAlert.Models
 
         public int YesterdayPrice { get; set; }
 
-       // public List<User> Subsciber;
+        public List<Author> Subscibers {get; set;} = new List<Author>();
 
     }
 }

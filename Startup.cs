@@ -34,7 +34,7 @@ namespace StockAlert
             services.AddMvc();
 
             var connectionString = Configuration["DbContextSettings:ConnectionString"];
-            services.AddDbContext<ArticleContext>(
+            services.AddDbContext<AlertContext>(
                 opts => opts.UseNpgsql(connectionString)
             );
         }
