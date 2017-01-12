@@ -16,6 +16,7 @@
     "Microsoft.Extensions.Logging.Debug": "1.1.0",
     "Npgsql.EntityFrameworkCore.PostgreSQL": "1.1.0",
     "Microsoft.EntityFrameworkCore.Design": "1.0.0-preview2-final",
+    "Serilog.Extensions.Logging.File": "1.0.0"
     //"Microsoft.AspNet.Identity.Core": "2.2.1",
     //"Microsoft.AspNet.Identity.EntityFramework": "2.2.1"
   },

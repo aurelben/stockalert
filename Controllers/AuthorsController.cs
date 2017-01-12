@@ -36,13 +36,23 @@ namespace StockAlert.Controllers
             _context.SaveChanges();
             return StatusCode(201, value);
         }
+        // PUT api/values/5
+        [HttpPut("{Id}")]
+        public IActionResult Put([FromBody]Author value, [FromRoute]int id)
+        {
+            if (value == null )
+            {
+                return BadRequest();
+            }
 
-        // [HttpPut("{Id}")]
-        // public IActionResult Put([FromBody]Author value, int id)
-        // {
-        //     Author tmp = _context.Authors.FirstOrDefault(x => x.Id == id).Add(value);
-        //     _context.SaveChanges();
-        //     return StatusCode(201, value);
-        // }
+            Author MyAuthor = _context.Authors.Find(id);
+            if (MyAuthor == null)
+            {
+                return NotFound();
+            }
+            _context.Entry(MyAuthor).CurrentValues.SetValues(value);
+            _context.SaveChanges();
+            return StatusCode(201, value);
+        }
     }
 }
