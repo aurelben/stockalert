@@ -1,0 +1,1969 @@
+2017-01-15T13:46:13.2859370+01:00 0HL1T8HUIHBCV [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 123 (e5be5b71)
+2017-01-15T13:46:14.2549290+01:00 0HL1T8HUIHBCV [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T13:46:15.0269240+01:00 0HL1T8HUIHBCV [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 1349.0436ms (afa2e885)
+2017-01-15T13:46:15.0830550+01:00 0HL1T8HUIHBCV [ERR] Connection id ""0HL1T8HUGN7N9"": An unhandled exception was thrown by the application. (8c14976b)
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<Ticker>.Find' was of type 'string', which does not match the property type of 'int'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues, IReadOnlyList`1& keyProperties)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 73
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T13:46:15.1722390+01:00 0HL1T8HUIHBCV [INF] Request finished in 1917.612ms 500  (15c52c40)
+2017-01-15T15:28:10.5235160+01:00 0HL1TAATL1UTP [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 123 (e5be5b71)
+2017-01-15T15:28:11.4196500+01:00 0HL1TAATL1UTP [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T15:28:12.2560140+01:00 0HL1TAATL1UTP [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 1336.5ms (afa2e885)
+2017-01-15T15:28:12.3254280+01:00 0HL1TAATL1UTP [ERR] Connection id ""0HL1TAATJ05V1"": An unhandled exception was thrown by the application. (8c14976b)
+System.ArgumentException: Entity type 'Ticker' is defined with a 2-part composite key, but 1 values were passed to the 'DbSet.Find' method.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues, IReadOnlyList`1& keyProperties)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 73
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T15:28:12.4115890+01:00 0HL1TAATL1UTP [INF] Request finished in 1924.9833ms 500  (15c52c40)
+2017-01-15T15:31:08.5628100+01:00 0HL1TACIMVSV7 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 123 (e5be5b71)
+2017-01-15T15:31:09.4565490+01:00 0HL1TACIMVSV7 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T15:31:10.2573470+01:00 0HL1TACIMVSV7 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 1325.4815ms (afa2e885)
+2017-01-15T15:31:10.3118380+01:00 0HL1TACIMVSV7 [ERR] Connection id ""0HL1TACIL3BUH"": An unhandled exception was thrown by the application. (8c14976b)
+System.ArgumentNullException: Value cannot be null.
+Parameter name: keyValues
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues, IReadOnlyList`1& keyProperties)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 73
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T15:31:10.4071520+01:00 0HL1TACIMVSV7 [INF] Request finished in 1879.7952ms 500  (15c52c40)
+2017-01-15T15:34:27.3220160+01:00 0HL1TACIMVSV8 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 126 (e5be5b71)
+2017-01-15T15:34:27.3289610+01:00 0HL1TACIMVSV8 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T15:34:28.3073960+01:00 0HL1TACIMVSV8 [INF] Executed DbCommand (27ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T15:34:28.3490820+01:00 0HL1TACIMVSV8 [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T15:34:28.9124430+01:00 0HL1TACIMVSV8 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?', @p9='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "TickerNameStr", "Title", "Type", "Variation")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p6, @p7, @p8, @p9); (6438bdd5)
+2017-01-15T15:34:28.9265410+01:00 0HL1TACIMVSV8 [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: insert or update on table "Alerts" violates foreign key constraint "FK_Alerts_Authors_AuthorId"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 86
+2017-01-15T15:34:28.9286860+01:00 0HL1TACIMVSV8 [WRN] AlertsController.Post("crto") NOT FOUND, Exception: {e.Message} (18cd71c2)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: insert or update on table "Alerts" violates foreign key constraint "FK_Alerts_Authors_AuthorId"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 86
+2017-01-15T15:34:28.9602170+01:00 0HL1TACIMVSV8 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T15:34:29.0069820+01:00 0HL1TACIMVSV8 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 1681.6998ms (afa2e885)
+2017-01-15T15:34:29.0131320+01:00 0HL1TACIMVSV8 [INF] Request finished in 1691.3198ms 404 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T15:34:52.6214830+01:00 0HL1TAELFOKTR [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 126 (e5be5b71)
+2017-01-15T15:34:53.6661300+01:00 0HL1TAELFOKTR [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T15:34:55.4390760+01:00 0HL1TAELFOKTR [INF] Executed DbCommand (38ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T15:34:55.4860870+01:00 0HL1TAELFOKTR [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T15:34:56.0094010+01:00 0HL1TAELFOKTR [INF] Executed DbCommand (6ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?', @p9='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "TickerNameStr", "Title", "Type", "Variation")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p6, @p7, @p8, @p9); (6438bdd5)
+2017-01-15T15:34:56.0572370+01:00 0HL1TAELFOKTR [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: insert or update on table "Alerts" violates foreign key constraint "FK_Alerts_Authors_AuthorId"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 86
+2017-01-15T15:34:56.0711840+01:00 0HL1TAELFOKTR [WRN] AlertsController.Post("crto") NOT FOUND, Exception: {e.Message} (18cd71c2)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: insert or update on table "Alerts" violates foreign key constraint "FK_Alerts_Authors_AuthorId"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 86
+2017-01-15T15:34:56.1165760+01:00 0HL1TAELFOKTR [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T15:34:56.2207080+01:00 0HL1TAELFOKTR [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 3160.1061ms (afa2e885)
+2017-01-15T15:34:56.2380400+01:00 0HL1TAELFOKTR [INF] Request finished in 3656.8363ms 404 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T15:38:35.7971620+01:00 0HL1TAGO04N25 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 123 (e5be5b71)
+2017-01-15T15:38:36.7563520+01:00 0HL1TAGO04N25 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T15:38:38.4323800+01:00 0HL1TAGO04N25 [INF] Executed DbCommand (35ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T15:38:38.4784730+01:00 0HL1TAGO04N25 [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T15:38:38.9966020+01:00 0HL1TAGO04N25 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p5, @p6, @p7, @p8); (6438bdd5)
+2017-01-15T15:38:39.0558680+01:00 0HL1TAGO04N25 [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: insert or update on table "Alerts" violates foreign key constraint "FK_Alerts_Authors_AuthorId"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 86
+2017-01-15T15:38:39.0732530+01:00 0HL1TAGO04N25 [WRN] AlertsController.Post("crto") NOT FOUND, Exception: {e.Message} (18cd71c2)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: insert or update on table "Alerts" violates foreign key constraint "FK_Alerts_Authors_AuthorId"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 86
+2017-01-15T15:38:39.1189800+01:00 0HL1TAGO04N25 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T15:38:39.2271060+01:00 0HL1TAGO04N25 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 3027.7485ms (afa2e885)
+2017-01-15T15:38:39.2441720+01:00 0HL1TAGO04N25 [INF] Request finished in 3488.3297ms 404 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T15:44:19.5750570+01:00 0HL1TAJUEKMDL [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 123 (e5be5b71)
+2017-01-15T15:44:20.4907690+01:00 0HL1TAJUEKMDL [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T15:44:22.1752490+01:00 0HL1TAJUEKMDL [INF] Executed DbCommand (30ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T15:44:22.2193780+01:00 0HL1TAJUEKMDL [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T15:44:22.7235850+01:00 0HL1TAJUEKMDL [INF] Executed DbCommand (7ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p5, @p6, @p7, @p8); (6438bdd5)
+2017-01-15T15:44:22.7708170+01:00 0HL1TAJUEKMDL [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: insert or update on table "Alerts" violates foreign key constraint "FK_Alerts_Authors_AuthorId"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 86
+2017-01-15T15:44:22.7719120+01:00 0HL1TAJUEKMDL [WRN] AlertsController.Post("crto") NOT FOUND, Exception: {e.Message} (18cd71c2)
+2017-01-15T15:44:22.8253840+01:00 0HL1TAJUEKMDL [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T15:44:22.9345570+01:00 0HL1TAJUEKMDL [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 2987.2858ms (afa2e885)
+2017-01-15T15:44:22.9535460+01:00 0HL1TAJUEKMDL [INF] Request finished in 3416.1337ms 404 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T15:45:55.6538360+01:00 0HL1TAKR2UH3F [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 123 (e5be5b71)
+2017-01-15T15:45:56.5455860+01:00 0HL1TAKR2UH3F [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T15:45:58.2056690+01:00 0HL1TAKR2UH3F [INF] Executed DbCommand (32ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T15:45:58.2515140+01:00 0HL1TAKR2UH3F [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T15:45:59.1695750+01:00 0HL1TAKR2UH3F [INF] Executed DbCommand (6ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p5, @p6, @p7, @p8); (6438bdd5)
+2017-01-15T15:45:59.2228790+01:00 0HL1TAKR2UH3F [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: insert or update on table "Alerts" violates foreign key constraint "FK_Alerts_Authors_AuthorId"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 86
+2017-01-15T15:45:59.2240090+01:00 0HL1TAKR2UH3F [WRN] AlertsController.Post("crto") NOT FOUND, Exception: "An error occurred while updating the entries. See the inner exception for details." (a54aed64)
+2017-01-15T15:45:59.2352190+01:00 0HL1TAKR2UH3F [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 3218.2327ms (afa2e885)
+2017-01-15T15:45:59.2547970+01:00 0HL1TAKR2UH3F [ERR] Connection id ""0HL1TAKR1204L"": An unhandled exception was thrown by the application. (8c14976b)
+System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.TextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 91
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T15:45:59.3279620+01:00 0HL1TAKR2UH3F [INF] Request finished in 3712.8339ms 500  (15c52c40)
+2017-01-15T15:48:52.2165960+01:00 0HL1TAMFMOF1V [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 123 (e5be5b71)
+2017-01-15T15:48:53.1131020+01:00 0HL1TAMFMOF1V [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T15:48:54.7770020+01:00 0HL1TAMFMOF1V [INF] Executed DbCommand (31ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T15:48:54.8215280+01:00 0HL1TAMFMOF1V [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T15:48:55.2344770+01:00 0HL1TAMFMOF1V [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T15:48:55.3414810+01:00 0HL1TAMFMOF1V [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 2764.3805ms (afa2e885)
+2017-01-15T15:48:55.3625830+01:00 0HL1TAMFMOF1V [INF] Request finished in 3184.4098ms 201 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T15:58:51.0465550+01:00 0HL1TAS25MNO3 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 123 (e5be5b71)
+2017-01-15T15:58:52.1022610+01:00 0HL1TAS25MNO3 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T15:58:53.8442590+01:00 0HL1TAS25MNO3 [INF] Executed DbCommand (26ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T15:58:53.8990240+01:00 0HL1TAS25MNO3 [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T15:58:54.4287420+01:00 0HL1TAS25MNO3 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p0, @p1, @p2, @p3); (6438bdd5)
+2017-01-15T15:58:54.4418710+01:00 0HL1TAS25MNO3 [INF] Executed DbCommand (7ms) [Parameters=[@p4='?', @p5='?', @p6='?', @p7='?', @p8='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p4, @p5, @p6, @p7, @p8)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T15:58:54.4840360+01:00 0HL1TAS25MNO3 [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: insert or update on table "Alerts" violates foreign key constraint "FK_Alerts_Authors_AuthorId"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 96
+2017-01-15T15:58:54.4851750+01:00 0HL1TAS25MNO3 [WRN] AlertsController.Post("crto") NOT FOUND, Exception: "An error occurred while updating the entries. See the inner exception for details." (a54aed64)
+2017-01-15T15:58:54.4950250+01:00 0HL1TAS25MNO3 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 2994.2872ms (afa2e885)
+2017-01-15T15:58:54.5072930+01:00 0HL1TAS25MNO3 [ERR] Connection id ""0HL1TAS23EJAN"": An unhandled exception was thrown by the application. (8c14976b)
+System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.TextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 100
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T15:58:54.5853500+01:00 0HL1TAS25MNO3 [INF] Request finished in 3584.78ms 500  (15c52c40)
+2017-01-15T16:02:14.1718550+01:00 0HL1TATUMQ14R [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 123 (e5be5b71)
+2017-01-15T16:02:15.1739500+01:00 0HL1TATUMQ14R [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T16:02:16.9167670+01:00 0HL1TATUMQ14R [INF] Executed DbCommand (36ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T16:02:16.9690640+01:00 0HL1TATUMQ14R [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T16:02:17.7316200+01:00 0HL1TATUMQ14R [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T16:02:17.7363920+01:00 0HL1TATUMQ14R [WRN] AlertsController.Post("crto") NOT FOUND, Exception: "Object reference not set to an instance of an object." (a54aed64)
+2017-01-15T16:02:17.7496040+01:00 0HL1TATUMQ14R [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 3152.2072ms (afa2e885)
+2017-01-15T16:02:17.7978340+01:00 0HL1TATUMQ14R [ERR] Connection id ""0HL1TATUKU7KB"": An unhandled exception was thrown by the application. (8c14976b)
+System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.TextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 103
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T16:02:17.8843190+01:00 0HL1TATUMQ14R [INF] Request finished in 3742.3312ms 500  (15c52c40)
+2017-01-15T16:05:57.6129550+01:00 0HL1TB019MHLF [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 123 (e5be5b71)
+2017-01-15T16:05:58.4960170+01:00 0HL1TB019MHLF [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T16:06:00.2527580+01:00 0HL1TB019MHLF [INF] Executed DbCommand (33ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T16:06:00.3015320+01:00 0HL1TB019MHLF [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T16:06:00.6403790+01:00 0HL1TB019MHLF [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T16:06:00.6522440+01:00 0HL1TB019MHLF [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 2679.8179ms (afa2e885)
+2017-01-15T16:06:00.6983020+01:00 0HL1TB019MHLF [ERR] Connection id ""0HL1TB018239V"": An unhandled exception was thrown by the application. (8c14976b)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 101
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T16:06:00.7696760+01:00 0HL1TB019MHLF [INF] Request finished in 3187.4613ms 500  (15c52c40)
+2017-01-15T18:41:09.1631180+01:00 0HL1TB019MHLG [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/authors application/json 87 (e5be5b71)
+2017-01-15T18:41:09.2088010+01:00 0HL1TB019MHLG [INF] Executing action method "StockAlert.Controllers.AuthorsController.Post (stockalert)" with arguments (["StockAlert.Models.Author"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T18:41:09.4415970+01:00 0HL1TB019MHLG [INF] Executed DbCommand (5ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Authors" ("Email", "FirstName", "LastName", "TickerName", "Token")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T18:41:09.5145240+01:00 0HL1TB019MHLG [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T18:41:09.6448100+01:00 0HL1TB019MHLG [INF] Executed action "StockAlert.Controllers.AuthorsController.Post (stockalert)" in 475.1722ms (afa2e885)
+2017-01-15T18:41:09.6485500+01:00 0HL1TB019MHLG [INF] Request finished in 486.6964ms 201 application/json; charset=utf-8 (15c52c40)
+2017-01-15T18:41:18.7083310+01:00 0HL1TB019MHLH [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 123 (e5be5b71)
+2017-01-15T18:41:18.7125300+01:00 0HL1TB019MHLH [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T18:41:18.7308920+01:00 0HL1TB019MHLH [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T18:41:18.7313720+01:00 0HL1TB019MHLH [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T18:41:18.9074640+01:00 0HL1TB019MHLH [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T18:41:18.9647440+01:00 0HL1TB019MHLH [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p0, @p1, @p2, @p3); (6438bdd5)
+2017-01-15T18:41:18.9668570+01:00 0HL1TB019MHLH [INF] Executed DbCommand (1ms) [Parameters=[@p4='?', @p5='?', @p6='?', @p7='?', @p8='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p4, @p5, @p6, @p7, @p8)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T18:41:18.9761150+01:00 0HL1TB019MHLH [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T18:41:18.9790170+01:00 0HL1TB019MHLH [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 269.0929ms (afa2e885)
+2017-01-15T18:41:18.9793670+01:00 0HL1TB019MHLH [INF] Request finished in 271.176ms 201 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T18:57:00.7588380+01:00 0HL1TDVJUMI8P [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/alerts/ application/json  (e5be5b71)
+2017-01-15T18:57:01.3894220+01:00 0HL1TDVJUMI8P [INF] Executing action method "StockAlert.Controllers.AlertsController.Get (stockalert)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-01-15T18:57:02.8611130+01:00 0HL1TDVJUMI8P [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AuthorId", "a"."TickerName", "a"."Title", "a"."Type", "a"."Variation"
+FROM "Alerts" AS "a" (6438bdd5)
+2017-01-15T18:57:03.0094210+01:00 0HL1TDVJUMI8P [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T18:57:03.3402590+01:00 0HL1TDVJUMI8P [INF] Executed action "StockAlert.Controllers.AlertsController.Get (stockalert)" in 2146.5862ms (afa2e885)
+2017-01-15T18:57:03.3607610+01:00 0HL1TDVJUMI8P [INF] Request finished in 2653.395ms 200 application/json; charset=utf-8 (15c52c40)
+2017-01-15T18:57:26.8016460+01:00 0HL1TDVJUMI8Q [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/alerts/ application/json  (e5be5b71)
+2017-01-15T18:57:26.8048200+01:00 0HL1TDVJUMI8Q [INF] Executing action method "StockAlert.Controllers.AlertsController.Get (stockalert)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-01-15T18:57:26.8161350+01:00 0HL1TDVJUMI8Q [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AuthorId", "a"."TickerName", "a"."Title", "a"."Type", "a"."Variation"
+FROM "Alerts" AS "a" (6438bdd5)
+2017-01-15T18:57:26.8170910+01:00 0HL1TDVJUMI8Q [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T18:57:26.8300000+01:00 0HL1TDVJUMI8Q [INF] Executed action "StockAlert.Controllers.AlertsController.Get (stockalert)" in 13.951ms (afa2e885)
+2017-01-15T18:57:26.8304480+01:00 0HL1TDVJUMI8Q [INF] Request finished in 29.0059ms 200 application/json; charset=utf-8 (15c52c40)
+2017-01-15T18:58:18.6896850+01:00 0HL1TDVJUMI8R [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 114 (e5be5b71)
+2017-01-15T18:58:18.8939810+01:00 0HL1TDVJUMI8R [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T18:58:19.2328390+01:00 0HL1TDVJUMI8R [INF] Executed DbCommand (22ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T18:58:19.2389200+01:00 0HL1TDVJUMI8R [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T18:58:19.5986580+01:00 0HL1TDVJUMI8R [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T18:58:19.7880430+01:00 0HL1TDVJUMI8R [INF] Executed DbCommand (1ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p0, @p1, @p2, @p3); (6438bdd5)
+2017-01-15T18:58:19.7954150+01:00 0HL1TDVJUMI8R [INF] Executed DbCommand (2ms) [Parameters=[@p4='?', @p5='?', @p6='?', @p7='?', @p8='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p4, @p5, @p6, @p7, @p8)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T18:58:19.8221300+01:00 0HL1TDVJUMI8R [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T18:58:19.8248980+01:00 0HL1TDVJUMI8R [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 1132.9288ms (afa2e885)
+2017-01-15T18:58:19.8259800+01:00 0HL1TDVJUMI8R [INF] Request finished in 1136.4149ms 201 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T18:59:21.0948850+01:00 0HL1TDVJUMI8S [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 114 (e5be5b71)
+2017-01-15T18:59:21.0986460+01:00 0HL1TDVJUMI8S [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T18:59:21.1074100+01:00 0HL1TDVJUMI8S [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T18:59:21.1079910+01:00 0HL1TDVJUMI8S [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T18:59:21.6635880+01:00 0HL1TDVJUMI8S [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T18:59:21.6645320+01:00 0HL1TDVJUMI8S [WRN] AlertsController.Post("fslr") Author 2 NOT FOUND (191906a4)
+2017-01-15T18:59:21.6652770+01:00 0HL1TDVJUMI8S [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T18:59:21.6655900+01:00 0HL1TDVJUMI8S [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 570.35ms (afa2e885)
+2017-01-15T18:59:21.6659120+01:00 0HL1TDVJUMI8S [INF] Request finished in 571.191ms 400 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T19:08:51.6293080+01:00 0HL1TE67Q5FKT [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/authors application/json 87 (e5be5b71)
+2017-01-15T19:08:52.6582870+01:00 0HL1TE67Q5FKT [INF] Executing action method "StockAlert.Controllers.AuthorsController.Post (stockalert)" with arguments (["StockAlert.Models.Author"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:08:54.0955200+01:00 0HL1TE67Q5FKT [INF] Executed DbCommand (24ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Authors" ("Email", "FirstName", "LastName", "TickerName", "Token")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T19:08:54.2084520+01:00 0HL1TE67Q5FKT [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T19:08:54.3923350+01:00 0HL1TE67Q5FKT [INF] Executed action "StockAlert.Controllers.AuthorsController.Post (stockalert)" in 2284.6958ms (afa2e885)
+2017-01-15T19:08:54.4100090+01:00 0HL1TE67Q5FKT [INF] Request finished in 2831.5552ms 201 application/json; charset=utf-8 (15c52c40)
+2017-01-15T19:09:12.5953980+01:00 0HL1TE67Q5FKU [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 114 (e5be5b71)
+2017-01-15T19:09:12.6189490+01:00 0HL1TE67Q5FKU [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:09:13.2998890+01:00 0HL1TE67Q5FKU [INF] Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:09:13.3262570+01:00 0HL1TE67Q5FKU [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T19:09:13.6650310+01:00 0HL1TE67Q5FKU [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:09:13.6674880+01:00 0HL1TE67Q5FKU [WRN] AlertsController.Post("fslr") Author 2 NOT FOUND (191906a4)
+2017-01-15T19:09:13.6682870+01:00 0HL1TE67Q5FKU [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T19:09:13.6708080+01:00 0HL1TE67Q5FKU [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 1073.4622ms (afa2e885)
+2017-01-15T19:09:13.6718410+01:00 0HL1TE67Q5FKU [INF] Request finished in 1076.1322ms 400 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T19:09:21.3594140+01:00 0HL1TE67Q5FKV [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 114 (e5be5b71)
+2017-01-15T19:09:21.3624340+01:00 0HL1TE67Q5FKV [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:09:21.3786760+01:00 0HL1TE67Q5FKV [INF] Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:09:21.3790430+01:00 0HL1TE67Q5FKV [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T19:09:21.5042570+01:00 0HL1TE67Q5FKV [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:09:21.5722600+01:00 0HL1TE67Q5FKV [INF] Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p0, @p1, @p2, @p3); (6438bdd5)
+2017-01-15T19:09:21.5764190+01:00 0HL1TE67Q5FKV [INF] Executed DbCommand (3ms) [Parameters=[@p4='?', @p5='?', @p6='?', @p7='?', @p8='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p4, @p5, @p6, @p7, @p8)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T19:09:21.5840500+01:00 0HL1TE67Q5FKV [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T19:09:21.5843790+01:00 0HL1TE67Q5FKV [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 223.4952ms (afa2e885)
+2017-01-15T19:09:21.5846680+01:00 0HL1TE67Q5FKV [INF] Request finished in 225.3591ms 201 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T19:09:30.1100750+01:00 0HL1TE67Q5FL0 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 112 (e5be5b71)
+2017-01-15T19:09:30.1431430+01:00 0HL1TE67Q5FL0 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments ([""]) - ModelState is Invalid (ba7f4ac2)
+2017-01-15T19:09:30.1470300+01:00 0HL1TE67Q5FL0 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 36.6244ms (afa2e885)
+2017-01-15T19:09:30.2145820+01:00 0HL1TE67Q5FL0 [ERR] Connection id ""0HL1TE67NTDFN"": An unhandled exception was thrown by the application. (8c14976b)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 70
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:09:30.2211800+01:00 0HL1TE67Q5FL0 [INF] Request finished in 111.2854ms 500  (15c52c40)
+2017-01-15T19:10:48.3280650+01:00 0HL1TE67Q5FL1 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 111 (e5be5b71)
+2017-01-15T19:10:48.3285980+01:00 0HL1TE67Q5FL1 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:10:48.3330740+01:00 0HL1TE67Q5FL1 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:10:48.3333380+01:00 0HL1TE67Q5FL1 [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T19:10:48.9024190+01:00 0HL1TE67Q5FL1 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:10:48.9167330+01:00 0HL1TE67Q5FL1 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p0, @p1, @p2, @p3); (6438bdd5)
+2017-01-15T19:10:48.9446870+01:00 0HL1TE67Q5FL1 [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23505: duplicate key value violates unique constraint "PK_Tickers"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 105
+2017-01-15T19:10:48.9454920+01:00 0HL1TE67Q5FL1 [WRN] AlertsController.Post("fslr") NOT FOUND, Exception: "An error occurred while updating the entries. See the inner exception for details.": InnerException: "23505: duplicate key value violates unique constraint \"PK_Tickers\"" (a4a535cb)
+2017-01-15T19:10:48.9481480+01:00 0HL1TE67Q5FL1 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 619.7105ms (afa2e885)
+2017-01-15T19:10:48.9548600+01:00 0HL1TE67Q5FL1 [ERR] Connection id ""0HL1TE67NTDFN"": An unhandled exception was thrown by the application. (8c14976b)
+System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.TextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 120
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:10:48.9552530+01:00 0HL1TE67Q5FL1 [INF] Request finished in 627.2843ms 500  (15c52c40)
+2017-01-15T19:11:01.2582440+01:00 0HL1TE67Q5FL2 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 111 (e5be5b71)
+2017-01-15T19:11:01.2588130+01:00 0HL1TE67Q5FL2 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:11:01.2631190+01:00 0HL1TE67Q5FL2 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:11:01.2633570+01:00 0HL1TE67Q5FL2 [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T19:11:01.3936670+01:00 0HL1TE67Q5FL2 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:11:01.3968160+01:00 0HL1TE67Q5FL2 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p0, @p1, @p2, @p3); (6438bdd5)
+2017-01-15T19:11:01.4018760+01:00 0HL1TE67Q5FL2 [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23505: duplicate key value violates unique constraint "PK_Tickers"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 105
+2017-01-15T19:11:01.4023450+01:00 0HL1TE67Q5FL2 [WRN] AlertsController.Post("fslr") NOT FOUND, Exception: "An error occurred while updating the entries. See the inner exception for details.": InnerException: "23505: duplicate key value violates unique constraint \"PK_Tickers\"" (a4a535cb)
+2017-01-15T19:11:01.4029330+01:00 0HL1TE67Q5FL2 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 144.4342ms (afa2e885)
+2017-01-15T19:11:01.4103500+01:00 0HL1TE67Q5FL2 [ERR] Connection id ""0HL1TE67NTDFN"": An unhandled exception was thrown by the application. (8c14976b)
+System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.TextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 120
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:11:01.4107380+01:00 0HL1TE67Q5FL2 [INF] Request finished in 152.6411ms 500  (15c52c40)
+2017-01-15T19:12:21.6308490+01:00 0HL1TE67Q5FL3 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 111 (e5be5b71)
+2017-01-15T19:12:21.6312640+01:00 0HL1TE67Q5FL3 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:12:21.6338120+01:00 0HL1TE67Q5FL3 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:12:21.6340000+01:00 0HL1TE67Q5FL3 [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T19:12:21.7573400+01:00 0HL1TE67Q5FL3 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:12:21.7610430+01:00 0HL1TE67Q5FL3 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p0, @p1, @p2, @p3); (6438bdd5)
+2017-01-15T19:12:21.7652180+01:00 0HL1TE67Q5FL3 [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23505: duplicate key value violates unique constraint "PK_Tickers"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 105
+2017-01-15T19:12:21.7655470+01:00 0HL1TE67Q5FL3 [WRN] AlertsController.Post("fslr") NOT FOUND, Exception: "An error occurred while updating the entries. See the inner exception for details.": InnerException: "23505: duplicate key value violates unique constraint \"PK_Tickers\"" (a4a535cb)
+2017-01-15T19:12:21.7660410+01:00 0HL1TE67Q5FL3 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 134.9571ms (afa2e885)
+2017-01-15T19:12:21.7704220+01:00 0HL1TE67Q5FL3 [ERR] Connection id ""0HL1TE67NTDFN"": An unhandled exception was thrown by the application. (8c14976b)
+System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.TextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 120
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:12:21.7706640+01:00 0HL1TE67Q5FL3 [INF] Request finished in 139.9609ms 500  (15c52c40)
+2017-01-15T19:13:13.5807480+01:00 0HL1TE67Q5FL4 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 112 (e5be5b71)
+2017-01-15T19:13:13.5813390+01:00 0HL1TE67Q5FL4 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:13:13.5842440+01:00 0HL1TE67Q5FL4 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:13:13.5844720+01:00 0HL1TE67Q5FL4 [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T19:13:13.7226890+01:00 0HL1TE67Q5FL4 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:13:13.7248550+01:00 0HL1TE67Q5FL4 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p0, @p1, @p2, @p3); (6438bdd5)
+2017-01-15T19:13:13.7265010+01:00 0HL1TE67Q5FL4 [INF] Executed DbCommand (1ms) [Parameters=[@p4='?', @p5='?', @p6='?', @p7='?', @p8='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p4, @p5, @p6, @p7, @p8)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T19:13:13.7283840+01:00 0HL1TE67Q5FL4 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T19:13:13.7288450+01:00 0HL1TE67Q5FL4 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 147.6961ms (afa2e885)
+2017-01-15T19:13:13.7291710+01:00 0HL1TE67Q5FL4 [INF] Request finished in 148.5652ms 201 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T19:13:27.2595460+01:00 0HL1TE67Q5FL5 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 111 (e5be5b71)
+2017-01-15T19:13:27.2599860+01:00 0HL1TE67Q5FL5 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:13:27.2635430+01:00 0HL1TE67Q5FL5 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:13:27.2638730+01:00 0HL1TE67Q5FL5 [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T19:13:27.3839340+01:00 0HL1TE67Q5FL5 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:13:27.3873280+01:00 0HL1TE67Q5FL5 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p0, @p1, @p2, @p3); (6438bdd5)
+2017-01-15T19:13:27.3913910+01:00 0HL1TE67Q5FL5 [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23505: duplicate key value violates unique constraint "PK_Tickers"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 105
+2017-01-15T19:13:27.3917730+01:00 0HL1TE67Q5FL5 [WRN] AlertsController.Post("crto") NOT FOUND, Exception: "An error occurred while updating the entries. See the inner exception for details.": InnerException: "23505: duplicate key value violates unique constraint \"PK_Tickers\"" (a4a535cb)
+2017-01-15T19:13:27.3922820+01:00 0HL1TE67Q5FL5 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 132.5109ms (afa2e885)
+2017-01-15T19:13:27.3964920+01:00 0HL1TE67Q5FL5 [ERR] Connection id ""0HL1TE67NTDFN"": An unhandled exception was thrown by the application. (8c14976b)
+System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.TextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 120
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:13:27.3967880+01:00 0HL1TE67Q5FL5 [INF] Request finished in 137.3714ms 500  (15c52c40)
+2017-01-15T19:15:37.1427060+01:00 0HL1TEA0LBGR1 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 111 (e5be5b71)
+2017-01-15T19:15:38.0473570+01:00 0HL1TEA0LBGR1 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:15:39.7438280+01:00 0HL1TEA0LBGR1 [INF] Executed DbCommand (30ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:15:39.7931470+01:00 0HL1TEA0LBGR1 [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T19:15:40.1637850+01:00 0HL1TEA0LBGR1 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:15:40.4098430+01:00 0HL1TEA0LBGR1 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p0, @p1, @p2, @p3); (6438bdd5)
+2017-01-15T19:15:40.4794190+01:00 0HL1TEA0LBGR1 [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23505: duplicate key value violates unique constraint "PK_Tickers"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 105
+2017-01-15T19:15:40.4806450+01:00 0HL1TEA0LBGR1 [WRN] AlertsController.Post("crto") NOT FOUND, Exception: "An error occurred while updating the entries. See the inner exception for details.": InnerException: "23505: duplicate key value violates unique constraint \"PK_Tickers\"" (a4a535cb)
+2017-01-15T19:15:40.4898140+01:00 0HL1TEA0LBGR1 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 2980.1767ms (afa2e885)
+2017-01-15T19:15:40.5003670+01:00 0HL1TEA0LBGR1 [ERR] Connection id ""0HL1TEA0JIS5N"": An unhandled exception was thrown by the application. (8c14976b)
+System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.TextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 120
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:15:40.5745650+01:00 0HL1TEA0LBGR1 [INF] Request finished in 3462.5654ms 500  (15c52c40)
+2017-01-15T19:21:08.0915840+01:00 0HL1TED39HI2J [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 111 (e5be5b71)
+2017-01-15T19:21:09.2026750+01:00 0HL1TED39HI2J [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:21:11.1506660+01:00 0HL1TED39HI2J [INF] Executed DbCommand (34ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:21:11.2057180+01:00 0HL1TED39HI2J [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T19:21:11.5948760+01:00 0HL1TED39HI2J [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:21:11.8332290+01:00 0HL1TED39HI2J [INF] Executed DbCommand (11ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p0, @p1, @p2, @p3); (6438bdd5)
+2017-01-15T19:21:11.9051600+01:00 0HL1TED39HI2J [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23505: duplicate key value violates unique constraint "PK_Tickers"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 105
+2017-01-15T19:21:11.9061390+01:00 0HL1TED39HI2J [WRN] AlertsController.Post("crto") NOT FOUND, Exception: "An error occurred while updating the entries. See the inner exception for details.": InnerException: "23505: duplicate key value violates unique constraint \"PK_Tickers\"" (a4a535cb)
+2017-01-15T19:21:11.9222130+01:00 0HL1TED39HI2J [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 3345.893ms (afa2e885)
+2017-01-15T19:21:11.9413500+01:00 0HL1TED39HI2J [ERR] Connection id ""0HL1TED37LEUJ"": An unhandled exception was thrown by the application. (8c14976b)
+System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.TextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 120
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:21:12.0144570+01:00 0HL1TED39HI2J [INF] Request finished in 3963.4215ms 500  (15c52c40)
+2017-01-15T19:25:20.1327750+01:00 0HL1TEFED5S7V [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 111 (e5be5b71)
+2017-01-15T19:25:21.0440610+01:00 0HL1TEFED5S7V [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:25:22.8025310+01:00 0HL1TEFED5S7V [INF] Executed DbCommand (31ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:25:22.8523920+01:00 0HL1TEFED5S7V [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T19:25:23.2259350+01:00 0HL1TEFED5S7V [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:25:23.4481730+01:00 0HL1TEFED5S7V [INF] Executed DbCommand (5ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p0, @p1, @p2, @p3); (6438bdd5)
+2017-01-15T19:25:23.5168880+01:00 0HL1TEFED5S7V [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23505: duplicate key value violates unique constraint "PK_Tickers"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 105
+2017-01-15T19:25:23.5183520+01:00 0HL1TEFED5S7V [WRN] AlertsController.Post("crto") NOT FOUND, Exception: "An error occurred while updating the entries. See the inner exception for details.": InnerException: "23505: duplicate key value violates unique constraint \"PK_Tickers\"" (a4a535cb)
+2017-01-15T19:25:23.5348400+01:00 0HL1TEFED5S7V [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 3031.3427ms (afa2e885)
+2017-01-15T19:25:23.5563400+01:00 0HL1TEFED5S7V [ERR] Connection id ""0HL1TEFEBDACL"": An unhandled exception was thrown by the application. (8c14976b)
+System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.TextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 120
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:25:23.6724910+01:00 0HL1TEFED5S7V [INF] Request finished in 3575.8969ms 500  (15c52c40)
+2017-01-15T19:26:22.3300410+01:00 0HL1TEFED5S80 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 109 (e5be5b71)
+2017-01-15T19:26:22.3362830+01:00 0HL1TEFED5S80 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:26:22.3644870+01:00 0HL1TEFED5S80 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:26:22.3650190+01:00 0HL1TEFED5S80 [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T19:26:22.9458750+01:00 0HL1TEFED5S80 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:26:22.9499670+01:00 0HL1TEFED5S80 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "Id", "YesterdayPrice")
+VALUES (@p0, @p1, @p2, @p3); (6438bdd5)
+2017-01-15T19:26:22.9578580+01:00 0HL1TEFED5S80 [INF] Executed DbCommand (1ms) [Parameters=[@p4='?', @p5='?', @p6='?', @p7='?', @p8='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p4, @p5, @p6, @p7, @p8)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T19:26:23.0194540+01:00 0HL1TEFED5S80 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T19:26:23.0615520+01:00 0HL1TEFED5S80 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 729.2735ms (afa2e885)
+2017-01-15T19:26:23.0648190+01:00 0HL1TEFED5S80 [INF] Request finished in 734.8883ms 201 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T19:34:24.9635360+01:00 0HL1TEKGP3KIV [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 109 (e5be5b71)
+2017-01-15T19:34:25.9108530+01:00 0HL1TEKGP3KIV [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:34:27.6585110+01:00 0HL1TEKGP3KIV [INF] Executed DbCommand (34ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:34:27.7124310+01:00 0HL1TEKGP3KIV [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T19:34:28.0943400+01:00 0HL1TEKGP3KIV [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:34:28.3340330+01:00 0HL1TEKGP3KIV [INF] Executed DbCommand (6ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "YesterdayPrice")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T19:34:28.3908330+01:00 0HL1TEKGP3KIV [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23505: duplicate key value violates unique constraint "PK_Tickers"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 105
+2017-01-15T19:34:28.3919070+01:00 0HL1TEKGP3KIV [WRN] AlertsController.Post("ibm") NOT FOUND, Exception: "An error occurred while updating the entries. See the inner exception for details.": InnerException: "23505: duplicate key value violates unique constraint \"PK_Tickers\"" (a4a535cb)
+2017-01-15T19:34:28.4034830+01:00 0HL1TEKGP3KIV [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 3046.9439ms (afa2e885)
+2017-01-15T19:34:28.4178500+01:00 0HL1TEKGP3KIV [ERR] Connection id ""0HL1TEKGNBJEB"": An unhandled exception was thrown by the application. (8c14976b)
+System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.TextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 120
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:34:28.4965600+01:00 0HL1TEKGP3KIV [INF] Request finished in 3565.2284ms 500  (15c52c40)
+2017-01-15T19:35:36.7385870+01:00 0HL1TEKGP3KJ0 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 110 (e5be5b71)
+2017-01-15T19:35:36.7469280+01:00 0HL1TEKGP3KJ0 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:35:36.7924690+01:00 0HL1TEKGP3KJ0 [INF] Executed DbCommand (21ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:35:36.7930010+01:00 0HL1TEKGP3KJ0 [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T19:35:37.4312900+01:00 0HL1TEKGP3KJ0 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:35:37.4386830+01:00 0HL1TEKGP3KJ0 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "YesterdayPrice")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T19:35:37.4436710+01:00 0HL1TEKGP3KJ0 [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23505: duplicate key value violates unique constraint "PK_Tickers"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 105
+2017-01-15T19:35:37.4441780+01:00 0HL1TEKGP3KJ0 [WRN] AlertsController.Post("ibm") NOT FOUND, Exception: "An error occurred while updating the entries. See the inner exception for details.": InnerException: "23505: duplicate key value violates unique constraint \"PK_Tickers\"" (a4a535cb)
+2017-01-15T19:35:37.4455480+01:00 0HL1TEKGP3KJ0 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 703.746ms (afa2e885)
+2017-01-15T19:35:37.4488160+01:00 0HL1TEKGP3KJ0 [ERR] Connection id ""0HL1TEKGNBJEB"": An unhandled exception was thrown by the application. (8c14976b)
+System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.TextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 120
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:35:37.4495300+01:00 0HL1TEKGP3KJ0 [INF] Request finished in 711.3934ms 500  (15c52c40)
+2017-01-15T19:36:17.6798160+01:00 0HL1TEKGP3KJ1 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 112 (e5be5b71)
+2017-01-15T19:36:17.6804070+01:00 0HL1TEKGP3KJ1 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:36:17.6860140+01:00 0HL1TEKGP3KJ1 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:36:17.6862690+01:00 0HL1TEKGP3KJ1 [INF] Ticker value from db is: "(null)" (82a9db27)
+2017-01-15T19:36:17.8147740+01:00 0HL1TEKGP3KJ1 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 134.4714ms (afa2e885)
+2017-01-15T19:36:17.8183550+01:00 0HL1TEKGP3KJ1 [ERR] Connection id ""0HL1TEKGNBJEB"": An unhandled exception was thrown by the application. (8c14976b)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 118
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:36:17.8187330+01:00 0HL1TEKGP3KJ1 [INF] Request finished in 139.077ms 500  (15c52c40)
+2017-01-15T19:40:46.9289430+01:00 0HL1TEO2JQD33 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 112 (e5be5b71)
+2017-01-15T19:40:47.9275200+01:00 0HL1TEO2JQD33 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:40:49.7242460+01:00 0HL1TEO2JQD33 [INF] Executed DbCommand (31ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:40:49.7827630+01:00 0HL1TEO2JQD33 [INF] Ticker value for "appl" from db is: "(null)" (01053d37)
+2017-01-15T19:40:50.0738300+01:00 0HL1TEO2JQD33 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 2766.0159ms (afa2e885)
+2017-01-15T19:40:50.1285240+01:00 0HL1TEO2JQD33 [ERR] Connection id ""0HL1TEO2HVOAR"": An unhandled exception was thrown by the application. (8c14976b)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 118
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:40:50.2145060+01:00 0HL1TEO2JQD33 [INF] Request finished in 3321.6806ms 500  (15c52c40)
+2017-01-15T19:43:31.1401790+01:00 0HL1TEO2JQD34 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 111 (e5be5b71)
+2017-01-15T19:43:31.1503970+01:00 0HL1TEO2JQD34 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:43:31.2379630+01:00 0HL1TEO2JQD34 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:43:31.2387020+01:00 0HL1TEO2JQD34 [INF] Ticker value for "fslr" from db is: "(null)" (01053d37)
+2017-01-15T19:43:31.9215280+01:00 0HL1TEO2JQD34 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:43:32.1547510+01:00 0HL1TEO2JQD34 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "YesterdayPrice")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T19:43:32.1746670+01:00 0HL1TEO2JQD34 [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23505: duplicate key value violates unique constraint "PK_Tickers"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 105
+2017-01-15T19:43:32.1758490+01:00 0HL1TEO2JQD34 [WRN] AlertsController.Post("fslr") NOT FOUND, Exception: "An error occurred while updating the entries. See the inner exception for details.": InnerException: "23505: duplicate key value violates unique constraint \"PK_Tickers\"" (a4a535cb)
+2017-01-15T19:43:32.1767890+01:00 0HL1TEO2JQD34 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 1032.8425ms (afa2e885)
+2017-01-15T19:43:32.1800610+01:00 0HL1TEO2JQD34 [ERR] Connection id ""0HL1TEO2HVOAS"": An unhandled exception was thrown by the application. (8c14976b)
+System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.TextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 120
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:43:32.1807090+01:00 0HL1TEO2JQD34 [INF] Request finished in 1041.1657ms 500  (15c52c40)
+2017-01-15T19:43:41.5688840+01:00 0HL1TEO2JQD35 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 114 (e5be5b71)
+2017-01-15T19:43:41.5693290+01:00 0HL1TEO2JQD35 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:43:41.5724270+01:00 0HL1TEO2JQD35 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:43:41.5726580+01:00 0HL1TEO2JQD35 [INF] Ticker value for "fslr" from db is: "(null)" (01053d37)
+2017-01-15T19:43:41.7022920+01:00 0HL1TEO2JQD35 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:43:41.7090550+01:00 0HL1TEO2JQD35 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "YesterdayPrice")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T19:43:41.7132180+01:00 0HL1TEO2JQD35 [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23505: duplicate key value violates unique constraint "PK_Tickers"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 105
+2017-01-15T19:43:41.7138080+01:00 0HL1TEO2JQD35 [WRN] AlertsController.Post("fslr") NOT FOUND, Exception: "An error occurred while updating the entries. See the inner exception for details.": InnerException: "23505: duplicate key value violates unique constraint \"PK_Tickers\"" (a4a535cb)
+2017-01-15T19:43:41.7145860+01:00 0HL1TEO2JQD35 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 145.4651ms (afa2e885)
+2017-01-15T19:43:41.7190070+01:00 0HL1TEO2JQD35 [ERR] Connection id ""0HL1TEO2HVOAS"": An unhandled exception was thrown by the application. (8c14976b)
+System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.TextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 120
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:43:41.7193220+01:00 0HL1TEO2JQD35 [INF] Request finished in 150.5272ms 500  (15c52c40)
+2017-01-15T19:44:42.9924040+01:00 0HL1TEQ8V2F8P [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 114 (e5be5b71)
+2017-01-15T19:44:43.9280160+01:00 0HL1TEQ8V2F8P [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:44:45.6215220+01:00 0HL1TEQ8V2F8P [INF] Executed DbCommand (31ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:44:45.6685830+01:00 0HL1TEQ8V2F8P [INF] Ticker value for "fslr" from db is: "(null)" (01053d37)
+2017-01-15T19:44:46.0138420+01:00 0HL1TEQ8V2F8P [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:44:46.2572310+01:00 0HL1TEQ8V2F8P [INF] Executed DbCommand (3ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "YesterdayPrice")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T19:44:46.3122460+01:00 0HL1TEQ8V2F8P [ERR] An exception occurred in the database while saving changes.
+ (3b5ca34b)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23505: duplicate key value violates unique constraint "PK_Tickers"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 105
+2017-01-15T19:44:46.3132930+01:00 0HL1TEQ8V2F8P [WRN] AlertsController.Post("fslr") NOT FOUND, Exception: "An error occurred while updating the entries. See the inner exception for details.": InnerException: "23505: duplicate key value violates unique constraint \"PK_Tickers\"" (a4a535cb)
+2017-01-15T19:44:46.3242430+01:00 0HL1TEQ8V2F8P [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 2959.4194ms (afa2e885)
+2017-01-15T19:44:46.3369910+01:00 0HL1TEQ8V2F8P [ERR] Connection id ""0HL1TEQ8T5F5J"": An unhandled exception was thrown by the application. (8c14976b)
+System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.TextWriter.WriteLine(String format, Object arg0, Object arg1)
+   at System.Console.WriteLine(String format, Object arg0, Object arg1)
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 120
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:44:46.4196490+01:00 0HL1TEQ8V2F8P [INF] Request finished in 3456.5259ms 500  (15c52c40)
+2017-01-15T19:45:57.0810630+01:00 0HL1TEQV1KG81 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 114 (e5be5b71)
+2017-01-15T19:45:58.0159240+01:00 0HL1TEQV1KG81 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:45:59.8096610+01:00 0HL1TEQV1KG81 [INF] Executed DbCommand (41ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:45:59.9497580+01:00 0HL1TEQV1KG81 [INF] Ticker value for "fslr" from db is: "StockAlert.Models.Ticker" (01053d37)
+2017-01-15T19:45:59.9657280+01:00 0HL1TEQV1KG81 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:46:00.1983540+01:00 0HL1TEQV1KG81 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T19:46:00.2880900+01:00 0HL1TEQV1KG81 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T19:46:00.3906390+01:00 0HL1TEQV1KG81 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 2911.2164ms (afa2e885)
+2017-01-15T19:46:00.4065210+01:00 0HL1TEQV1KG81 [INF] Request finished in 3373.3744ms 201 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T19:46:08.2187990+01:00 0HL1TEQV1KG82 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 112 (e5be5b71)
+2017-01-15T19:46:08.2239760+01:00 0HL1TEQV1KG82 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:46:08.2724440+01:00 0HL1TEQV1KG82 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:46:08.2728710+01:00 0HL1TEQV1KG82 [INF] Ticker value for "appl" from db is: "(null)" (01053d37)
+2017-01-15T19:46:08.5603170+01:00 0HL1TEQV1KG82 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 339.1533ms (afa2e885)
+2017-01-15T19:46:08.6050070+01:00 0HL1TEQV1KG82 [ERR] Connection id ""0HL1TEQUVP6U9"": An unhandled exception was thrown by the application. (8c14976b)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at StockAlert.Controllers.AlertsController.Post(Alert value) in /Users/aurel/Documents/etna/IDV-NET5/stockalert/Controllers/AlertsController.cs:line 118
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-01-15T19:46:08.6094190+01:00 0HL1TEQV1KG82 [INF] Request finished in 390.909ms 500  (15c52c40)
+2017-01-15T19:47:10.1332900+01:00 0HL1TEQV1KG83 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 111 (e5be5b71)
+2017-01-15T19:47:10.1339110+01:00 0HL1TEQV1KG83 [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T19:47:10.1392500+01:00 0HL1TEQV1KG83 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:47:10.1399560+01:00 0HL1TEQV1KG83 [INF] Ticker value for "crto" from db is: "StockAlert.Models.Ticker" (01053d37)
+2017-01-15T19:47:10.1425030+01:00 0HL1TEQV1KG83 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T19:47:10.1460460+01:00 0HL1TEQV1KG83 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T19:47:10.1488960+01:00 0HL1TEQV1KG83 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T19:47:10.1493450+01:00 0HL1TEQV1KG83 [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 15.7233ms (afa2e885)
+2017-01-15T19:47:10.1500070+01:00 0HL1TEQV1KG83 [INF] Request finished in 17.0651ms 201 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T22:00:29.9459970+01:00 0HL1TH64UG11N [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/authors application/json 87 (e5be5b71)
+2017-01-15T22:00:30.9532600+01:00 0HL1TH64UG11N [INF] Executing action method "StockAlert.Controllers.AuthorsController.Post (stockalert)" with arguments (["StockAlert.Models.Author"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T22:00:32.3628090+01:00 0HL1TH64UG11N [INF] Executed DbCommand (30ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Authors" ("Email", "FirstName", "LastName", "TickerName", "Token")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T22:00:32.4697100+01:00 0HL1TH64UG11N [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T22:00:32.6545080+01:00 0HL1TH64UG11N [INF] Executed action "StockAlert.Controllers.AuthorsController.Post (stockalert)" in 2261.9201ms (afa2e885)
+2017-01-15T22:00:32.6740150+01:00 0HL1TH64UG11N [INF] Request finished in 2775.5022ms 201 application/json; charset=utf-8 (15c52c40)
+2017-01-15T22:00:39.6363220+01:00 0HL1TH64UG11O [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 111 (e5be5b71)
+2017-01-15T22:00:39.6715160+01:00 0HL1TH64UG11O [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T22:00:40.2799140+01:00 0HL1TH64UG11O [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T22:00:40.2986280+01:00 0HL1TH64UG11O [INF] Ticker value for "fslr" from db is: "(null)" (01053d37)
+2017-01-15T22:00:40.5956870+01:00 0HL1TH64UG11O [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T22:00:40.6544670+01:00 0HL1TH64UG11O [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "YesterdayPrice")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T22:00:40.6615250+01:00 0HL1TH64UG11O [INF] Executed DbCommand (4ms) [Parameters=[@p3='?', @p4='?', @p5='?', @p6='?', @p7='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p3, @p4, @p5, @p6, @p7)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T22:00:40.6684850+01:00 0HL1TH64UG11O [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T22:00:40.6709270+01:00 0HL1TH64UG11O [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 1030.5205ms (afa2e885)
+2017-01-15T22:00:40.6715380+01:00 0HL1TH64UG11O [INF] Request finished in 1035.4223ms 201 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T22:00:45.8590110+01:00 0HL1TH64UG11P [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 111 (e5be5b71)
+2017-01-15T22:00:45.8628730+01:00 0HL1TH64UG11P [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T22:00:45.8805170+01:00 0HL1TH64UG11P [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T22:00:45.8810690+01:00 0HL1TH64UG11P [INF] Ticker value for "crto" from db is: "(null)" (01053d37)
+2017-01-15T22:00:46.0102410+01:00 0HL1TH64UG11P [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T22:00:46.0211710+01:00 0HL1TH64UG11P [INF] Executed DbCommand (4ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "YesterdayPrice")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T22:00:46.0229570+01:00 0HL1TH64UG11P [INF] Executed DbCommand (1ms) [Parameters=[@p3='?', @p4='?', @p5='?', @p6='?', @p7='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p3, @p4, @p5, @p6, @p7)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T22:00:46.0242050+01:00 0HL1TH64UG11P [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T22:00:46.0246750+01:00 0HL1TH64UG11P [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 163.8257ms (afa2e885)
+2017-01-15T22:00:46.0251360+01:00 0HL1TH64UG11P [INF] Request finished in 166.1469ms 201 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T22:00:51.1469120+01:00 0HL1TH64UG11Q [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 109 (e5be5b71)
+2017-01-15T22:00:51.1476620+01:00 0HL1TH64UG11Q [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T22:00:51.1528620+01:00 0HL1TH64UG11Q [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T22:00:51.1563230+01:00 0HL1TH64UG11Q [INF] Ticker value for "ibm" from db is: "(null)" (01053d37)
+2017-01-15T22:00:51.2896050+01:00 0HL1TH64UG11Q [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T22:00:51.2916650+01:00 0HL1TH64UG11Q [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "YesterdayPrice")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T22:00:51.2929610+01:00 0HL1TH64UG11Q [INF] Executed DbCommand (0ms) [Parameters=[@p3='?', @p4='?', @p5='?', @p6='?', @p7='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p3, @p4, @p5, @p6, @p7)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T22:00:51.2937810+01:00 0HL1TH64UG11Q [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T22:00:51.2940300+01:00 0HL1TH64UG11Q [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 146.6613ms (afa2e885)
+2017-01-15T22:00:51.2943430+01:00 0HL1TH64UG11Q [INF] Request finished in 151.4426ms 201 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T22:01:00.2253530+01:00 0HL1TH64UG11R [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 114 (e5be5b71)
+2017-01-15T22:01:00.2258140+01:00 0HL1TH64UG11R [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T22:01:00.2288450+01:00 0HL1TH64UG11R [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T22:01:00.2419210+01:00 0HL1TH64UG11R [INF] Ticker value for "fslr" from db is: "StockAlert.Models.Ticker" (01053d37)
+2017-01-15T22:01:00.2459510+01:00 0HL1TH64UG11R [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T22:01:00.2483870+01:00 0HL1TH64UG11R [INF] Executed DbCommand (1ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T22:01:00.2544120+01:00 0HL1TH64UG11R [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T22:01:00.2548640+01:00 0HL1TH64UG11R [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 29.1518ms (afa2e885)
+2017-01-15T22:01:00.2556720+01:00 0HL1TH64UG11R [INF] Request finished in 30.2132ms 201 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T22:01:22.1776160+01:00 0HL1TH64UG11S [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 102 (e5be5b71)
+2017-01-15T22:01:22.1780890+01:00 0HL1TH64UG11S [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T22:01:22.1814470+01:00 0HL1TH64UG11S [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T22:01:22.1817070+01:00 0HL1TH64UG11S [INF] Ticker value for "cr,bkto" from db is: "(null)" (01053d37)
+2017-01-15T22:01:22.3149420+01:00 0HL1TH64UG11S [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T22:01:22.3165950+01:00 0HL1TH64UG11S [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Tickers" ("Name", "CurrentPrice", "YesterdayPrice")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T22:01:22.3181450+01:00 0HL1TH64UG11S [INF] Executed DbCommand (0ms) [Parameters=[@p3='?', @p4='?', @p5='?', @p6='?', @p7='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p3, @p4, @p5, @p6, @p7)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T22:01:22.3192180+01:00 0HL1TH64UG11S [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T22:01:22.3196220+01:00 0HL1TH64UG11S [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 141.6511ms (afa2e885)
+2017-01-15T22:01:22.3199630+01:00 0HL1TH64UG11S [INF] Request finished in 142.5837ms 201 text/plain; charset=utf-8 (15c52c40)
+2017-01-15T22:02:04.7490540+01:00 0HL1TH64UG11T [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/alerts/ application/json 110 (e5be5b71)
+2017-01-15T22:02:04.7495170+01:00 0HL1TH64UG11T [INF] Executing action method "StockAlert.Controllers.AlertsController.Post (stockalert)" with arguments (["StockAlert.Models.Alert"]) - ModelState is Valid (ba7f4ac2)
+2017-01-15T22:02:04.7554360+01:00 0HL1TH64UG11T [INF] Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Name", "e"."CurrentPrice", "e"."Id", "e"."YesterdayPrice"
+FROM "Tickers" AS "e"
+WHERE "e"."Name" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T22:02:04.7570720+01:00 0HL1TH64UG11T [INF] Ticker value for "ibm" from db is: "StockAlert.Models.Ticker" (01053d37)
+2017-01-15T22:02:04.7602180+01:00 0HL1TH64UG11T [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."Email", "e"."FirstName", "e"."LastName", "e"."TickerName", "e"."Token"
+FROM "Authors" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 (6438bdd5)
+2017-01-15T22:02:04.7785320+01:00 0HL1TH64UG11T [INF] Executed DbCommand (1ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Alerts" ("AuthorId", "TickerName", "Title", "Type", "Variation")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id"; (6438bdd5)
+2017-01-15T22:02:04.7854770+01:00 0HL1TH64UG11T [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-01-15T22:02:04.7857220+01:00 0HL1TH64UG11T [INF] Executed action "StockAlert.Controllers.AlertsController.Post (stockalert)" in 36.4368ms (afa2e885)
+2017-01-15T22:02:04.7859280+01:00 0HL1TH64UG11T [INF] Request finished in 37.0999ms 201 text/plain; charset=utf-8 (15c52c40)

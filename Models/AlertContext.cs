@@ -4,7 +4,16 @@ namespace StockAlert.Models
 {
     public class AlertContext : DbContext
     {
-        public AlertContext(DbContextOptions<AlertContext> options) : base(options) { 
+         protected override void OnModelCreating(ModelBuilder modelBuilder)
+            {
+                 modelBuilder.Entity<Ticker>().HasKey(c => c.Name );
+               
+                 modelBuilder.Entity<Ticker>().Property(f => f.Id).ValueGeneratedOnAdd();
+
+                 modelBuilder.Entity<Alert>().HasKey(c => c.Id);
+            }    
+        public AlertContext(DbContextOptions<AlertContext> options) : base(options) 
+        {    
 
         }
 
