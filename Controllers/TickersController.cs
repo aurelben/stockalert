@@ -19,11 +19,15 @@ namespace StockAlert.Controllers
         }
 
         // GET: /<controller>/
-        public bool Get()
+        public IActionResult Get()
         {
             List<Ticker> Tickers = _context.Tickers.ToList();
-
-            foreach(Ticker t in Tickers )
+            List<Alert> AlertsBull;
+            List<Alert> AlertsBear;
+            List<Alert> AlertsPrice;
+            Console.WriteLine("before foreach");
+            Tickers.ForEach(Console.WriteLine);
+            foreach( Ticker t in Tickers )
             {
                 string ticker = t.Name;
                 string tickerToGet = Helpers.GoogleFinanceApiConnector.GetRequest(ticker);
@@ -36,29 +40,35 @@ namespace StockAlert.Controllers
                 double change;
                 GFinObj.c_fix = GFinObj.c_fix.Replace('.', ',');
                 double.TryParse(GFinObj.c_fix, out change);
-                Console.WriteLine(GFinObj.c_fix);
+                Console.WriteLine("Change is: \n");
                 Console.WriteLine(change);
-                if (change < 0 && change != 0 )
+                if (change < 0)
                 {
                     // Get all bearish Alerts
-                    List<Alert> Alerts = _context.Alerts.Where(a => (a.Type == AlertType.bearish) && (a.TickerName == t.Name) ).ToList();
-                    Console.WriteLine("here");
+                    AlertsBear = _context.Alerts.Where(a => (a.Type == AlertType.bearish) && (a.TickerName == t.Name) ).ToList();
+                    Console.WriteLine("Get all bearish Alerts");
+                    AlertsBear.ForEach(Console.WriteLine);
+                    var  sendBear = new Helpers.AlertsSender(AlertsBear, _context);
+                    sendBear.SendByMail();
                 }
-                else if (change > 0 && change != 0 )
+                else if (change > 0)
                 {
                     // Get all bullsih Alerts
-                    List<Alert> Alerts = _context.Alerts.Where(a => (a.Type == AlertType.bullish) && (a.TickerName == t.Name) ).ToList();
+                    AlertsBull = _context.Alerts.Where(a => (a.Type == AlertType.bullish) && (a.TickerName == t.Name) ).ToList();
+                    Console.WriteLine("Get all bullsih Alerts");
+                    AlertsBull.ForEach(Console.WriteLine);
+                    var  sendBull = new Helpers.AlertsSender(AlertsBull, _context);
+                    sendBull.SendByMail();
                 }
-                else 
-                {
-                    // Get all price Alers
-                    List<Alert> Alerts = _context.Alerts.Where(a => (a.Type == AlertType.price) && (a.TickerName == t.Name) ).ToList();
-                }
-
-
+                // Get all price Alers
+                AlertsPrice = _context.Alerts.Where(a => (a.Type == AlertType.price) && (a.TickerName == t.Name) ).ToList();
+                Console.WriteLine("Get all price Alers");
+                AlertsPrice.ForEach(Console.WriteLine);
+                var  sendPrice = new Helpers.AlertsSender(AlertsPrice, _context);
+                sendPrice.SendByMail();
             }
 
-            return true;
+            return StatusCode(200, "Ok");
         }
 
         // GET api/values/5
