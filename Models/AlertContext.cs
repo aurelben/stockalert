@@ -11,6 +11,8 @@ namespace StockAlert.Models
                  modelBuilder.Entity<Ticker>().Property(f => f.Id).ValueGeneratedOnAdd();
 
                  modelBuilder.Entity<Alert>().HasKey(c => c.Id);
+
+                 modelBuilder.Entity<Alert>().HasOne(a => a.Ticker).WithMany(t => t.Alerts);
             }    
         public AlertContext(DbContextOptions<AlertContext> options) : base(options) 
         {    

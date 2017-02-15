@@ -2,7 +2,6 @@ using Newtonsoft.Json;
 using Microsoft.Extensions.Logging;
 using StockAlert.Models;
 using StockAlert.Helpers;
-using Microsoft.Extensions.Logging;
 using System;
 
 

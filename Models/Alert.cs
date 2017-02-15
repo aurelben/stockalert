@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using StockAlert.Models;
 
 namespace StockAlert.Models
 {
@@ -15,9 +16,11 @@ namespace StockAlert.Models
         public string Title { get; set; }
         public AlertType Type { get; set; }
         public int Variation { get; set; }
-        public Ticker Ticker { get; set; }
+        public Ticker Ticker { get; set; } = new Ticker();
         public string TickerName { get; set;}
         public int AuthorId { get; set; }
-        public Author Author { get; set; }
+        
+        [ForeignKey("AuthorForeignKey")]
+        public Author Author { get; set; } = new Author();
     }
 }

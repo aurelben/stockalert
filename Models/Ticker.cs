@@ -10,5 +10,6 @@ namespace StockAlert.Models
         public string Name { get; set; }
         public string Change { get; set; }
         public List<Author> Subscibers {get; set;} = new List<Author>();
+        public List<Alert> Alerts {get; set;} = new List<Alert>();
     }
 }
